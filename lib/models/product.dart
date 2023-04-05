@@ -47,16 +47,7 @@ class Product {
 List<Product> dummyProducts = [
   Product(
     id: '1',
-    title: 'Sofa-1',
-    price: 300,
-    imgUrl: AppAssets.tempProductAsset1,
-    //แก้เป็นfurniture
-    category: 'Clothes',
-    discountValue: 20,
-  ),
-  Product(
-    id: '1',
-    title: 'Sofa-1',
+    title: 'T-shirt',
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',
@@ -64,7 +55,7 @@ List<Product> dummyProducts = [
   ),
   Product(
     id: '1',
-    title: 'Sofa-1',
+    title: 'T-shirt',
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',
@@ -72,7 +63,7 @@ List<Product> dummyProducts = [
   ),
   Product(
     id: '1',
-    title: 'Sofa-1',
+    title: 'T-shirt',
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',
@@ -80,14 +71,22 @@ List<Product> dummyProducts = [
   ),
   Product(
     id: '1',
-    title: 'Sofa-1',
+    title: 'T-shirt',
+    price: 300,
+    imgUrl: AppAssets.tempProductAsset1,
+    category: 'Clothes',
+    discountValue: 20,
+  ),
+  Product(
+    id: '1',
+    title: 'T-shirt',
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',
   ),
   Product(
     id: '1',
-    title: 'Sofa-1',
+    title: 'T-shirt',
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',

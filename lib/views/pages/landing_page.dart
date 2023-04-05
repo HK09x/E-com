@@ -28,8 +28,7 @@ class LandingPage extends StatelessWidget {
             create: (_) => AuthController(auth: auth),
             child: Provider<Database>(
               create: (_) => FirestoreDatabase(user.uid),
-              child: const BottomNavbar(),
-            ),
+              child: const BottomNavbar()),
           );
         }
         // TODO: We will refactor this to make one component for loading

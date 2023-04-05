@@ -1,9 +1,17 @@
 class AppAssets {
   /// Home Page Images
   static const String topBannerHomePageAsset =
-      'https://www.forfur.com/img/I70/t_6940_15193849451456830650.jpg';
+      'https://cdn1.expertreviews.co.uk/sites/expertreviews/files/2019/08/best_online_clothes_shops.jpg';
   static const String tempProductAsset1 =
-      'https://www.modernform.co.th/stocks/inspired/o0x0/9m/9m/fpjz9m9mgy/1-copy.jpg';
+      'https://m.media-amazon.com/images/I/61-jBuhtgZL._UX569_.jpg';
 
   /// Shop Page Images
+
+  /// Authentication Page Images
+  static const facebookIcon = 'assets/facebook-svgrepo-com.svg';
+  static const googleIcon = 'assets/google-svgrepo-com.svg';
+
+  /// Checkout Images
+  static const mastercardIcon =
+      'https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png';
 }

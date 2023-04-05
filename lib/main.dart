@@ -22,37 +22,45 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Ecommerce App',
+     
         theme: ThemeData(
             scaffoldBackgroundColor: const Color(0xFFE5E5E5),
             primaryColor: Colors.red,
+            appBarTheme: const AppBarTheme(
+              backgroundColor: Colors.white,
+              elevation: 2,
+              iconTheme: IconThemeData(
+                color: Colors.black,
+              ),
+            ),
             inputDecorationTheme: InputDecorationTheme(
               labelStyle: Theme.of(context).textTheme.subtitle1,
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(2.0),
+                borderRadius: BorderRadius.circular(16.0),
                 borderSide: const BorderSide(
                   color: Colors.grey,
                 ),
               ),
               disabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(2.0),
+                borderRadius: BorderRadius.circular(16.0),
                 borderSide: const BorderSide(
                   color: Colors.grey,
                 ),
               ),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(2.0),
+                borderRadius: BorderRadius.circular(16.0),
                 borderSide: const BorderSide(
                   color: Colors.grey,
                 ),
               ),
               errorBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(2.0),
+                borderRadius: BorderRadius.circular(16.0),
                 borderSide: const BorderSide(
                   color: Colors.red,
                 ),
               ),
               focusedErrorBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(2.0),
+                borderRadius: BorderRadius.circular(16.0),
                 borderSide: const BorderSide(
                   color: Colors.red,
                 ),
