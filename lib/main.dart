@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         title: 'Ecommerce App',
      
         theme: ThemeData(
-            scaffoldBackgroundColor: const Color(0xFFE5E5E5),
+            scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255),
             primaryColor: Colors.red,
             appBarTheme: const AppBarTheme(
               backgroundColor: Colors.white,
