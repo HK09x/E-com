@@ -8,11 +8,11 @@ class CheckoutOrderDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: const [
-        OrderSummaryComponent(title: 'Order', value: '125\$'),
+        OrderSummaryComponent(title: 'Order', value: '125฿'),
         SizedBox(height: 8.0),
-        OrderSummaryComponent(title: 'Delivery', value: '15\$'),
+        OrderSummaryComponent(title: 'Delivery', value: '15฿'),
         SizedBox(height: 8.0),
-        OrderSummaryComponent(title: 'Summary', value: '140\$'),
+        OrderSummaryComponent(title: 'Summary', value: '140฿'),
       ],
     );
   }

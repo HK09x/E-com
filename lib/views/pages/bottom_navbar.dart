@@ -18,10 +18,10 @@ class _BottomNavbarState extends State<BottomNavbar> {
   List<Widget> _buildScreens() {
     return [
       const HomePage(),
-      Container(),
+      
       const CartPage(),
       
-      Container(),
+      
       const ProfilePage()
     ];
   }
@@ -29,31 +29,21 @@ class _BottomNavbarState extends State<BottomNavbar> {
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.home),
+        icon: const Icon(CupertinoIcons.home),
         title: ("Home"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
+      
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.bag),
-        title: ("Shop"),
-        activeColorPrimary: CupertinoColors.activeBlue,
-        inactiveColorPrimary: CupertinoColors.systemGrey,
-      ),
-      PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.shopping_cart),
+        icon: const Icon(CupertinoIcons.shopping_cart),
         title: ("Cart"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
+      
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.favorite_border),
-        title: ("Favorites"),
-        activeColorPrimary: CupertinoColors.activeBlue,
-        inactiveColorPrimary: CupertinoColors.systemGrey,
-      ),
-      PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.profile_circled),
+        icon: const Icon(CupertinoIcons.profile_circled),
         title: ("Profile"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
@@ -83,12 +73,12 @@ class _BottomNavbarState extends State<BottomNavbar> {
         ),
         popAllScreensOnTapOfSelectedTab: true,
         popActionScreens: PopActionScreensType.all,
-        itemAnimationProperties: ItemAnimationProperties(
+        itemAnimationProperties: const ItemAnimationProperties(
           // Navigation Bar's items animation properties.
           duration: Duration(milliseconds: 200),
           curve: Curves.ease,
         ),
-        screenTransitionAnimation: ScreenTransitionAnimation(
+        screenTransitionAnimation: const ScreenTransitionAnimation(
           // Screen transition animation on change of selected tab.
           animateTabTransition: true,
           curve: Curves.ease,

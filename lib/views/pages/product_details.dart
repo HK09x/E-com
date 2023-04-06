@@ -3,7 +3,6 @@ import 'package:flutter_ecommerce/controllers/database_controller.dart';
 import 'package:flutter_ecommerce/models/add_to_cart_model.dart';
 import 'package:flutter_ecommerce/models/product.dart';
 import 'package:flutter_ecommerce/utilities/constants.dart';
-import 'package:flutter_ecommerce/views/widgets/drop_down_menu.dart';
 import 'package:flutter_ecommerce/views/widgets/main_button.dart';
 import 'package:flutter_ecommerce/views/widgets/main_dialog.dart';
 import 'package:provider/provider.dart';
@@ -31,7 +30,7 @@ class _ProductDetailsState extends State<ProductDetails> {
         price: widget.product.price,
         productId: widget.product.id,
         imgUrl: widget.product.imgUrl,
-        size: dropdownValue,
+        
       );
       await database.addToCart(addToCartProduct);
     } catch (e) {
@@ -52,7 +51,7 @@ class _ProductDetailsState extends State<ProductDetails> {
       appBar: AppBar(
         title: Text(
           widget.product.title,
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         actions: [
           IconButton(
@@ -69,7 +68,7 @@ class _ProductDetailsState extends State<ProductDetails> {
             Image.network(
               widget.product.imgUrl,
               width: double.infinity,
-              height: size.height * 0.55,
+              height: size.height * 0.60,
               fit: BoxFit.cover,
             ),
             const SizedBox(height: 8.0),
@@ -84,22 +83,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Expanded(
+                      const Expanded(
                         child: SizedBox(
                           height: 60,
-                          child: DropDownMenuComponent(
-                            items: const ['S', 'M', 'L', 'XL', 'XXL'],
-                            hint: 'Size',
-                            onChanged: (String? newValue) {
-                              setState(() {
-                                dropdownValue = newValue!;
-                              });
-                            },
-                          ),
+                          
                         ),
                       ),
                       const Spacer(),
-                      // TODO: Create one component for the favorite button
+                      
                       InkWell(
                         onTap: () {
                           setState(() {
@@ -131,34 +122,34 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 24.0),
+                  const SizedBox(height: 16.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         widget.product.title,
-                        style: Theme.of(context).textTheme.headline5!.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                               fontWeight: FontWeight.w600,
                             ),
                       ),
                       Text(
                         '\$${widget.product.price}',
-                        style: Theme.of(context).textTheme.headline5!.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                               fontWeight: FontWeight.w600,
                             ),
                       ),
                     ],
                   ),
-                  const SizedBox(height: 8.0),
-                  Text(
-                    widget.product.category,
-                    style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                          color: Colors.black54,
-                        ),
-                  ),
+                  // const SizedBox(height: 8.0),
+                  // Text(
+                  //   widget.product.category,
+                  //   style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                  //         color: Colors.black54,
+                  //       ),
+                  // ),
                   const SizedBox(height: 16.0),
                   Text(
-                    'This is a dummy description for this product! I think we will add it in the future! I need to add more lines, so I add these words just to have more than two lines!',
+                    'โซฟารับแขก โซฟาดีไซน์โมเดิร์น มีระดับ ',
                     style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   const SizedBox(height: 24.0),

@@ -28,7 +28,7 @@ class FirestoreDatabase implements Database {
   Stream<List<Product>> salesProductsStream() => _service.collectionsStream(
         path: ApiPath.products(),
         builder: (data, documentId) => Product.fromMap(data!, documentId),
-        queryBuilder: (query) => query.where('discountValue', isNotEqualTo: 0),
+        queryBuilder: (query) => query.where('discountValue', isNotEqualTo: 7),
       );
 
   @override

@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_ecommerce/controllers/database_controller.dart';
-import 'package:flutter_ecommerce/models/product.dart';
-import 'package:flutter_ecommerce/models/shipping_address.dart';
 import 'package:flutter_ecommerce/utilities/args_models/add_shipping_address_args.dart';
 import 'package:flutter_ecommerce/utilities/routes.dart';
 import 'package:flutter_ecommerce/views/pages/bottom_navbar.dart';

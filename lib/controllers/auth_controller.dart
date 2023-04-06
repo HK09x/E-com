@@ -10,7 +10,7 @@ class AuthController with ChangeNotifier {
   String email;
   String password;
   AuthFormType authFormType;
-  // TODO: It's not a best practice thing but it's temporary
+  
   final database = FirestoreDatabase('123');
 
   AuthController({

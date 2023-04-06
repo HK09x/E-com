@@ -5,7 +5,6 @@ import 'package:flutter_ecommerce/utilities/enums.dart';
 import 'package:flutter_ecommerce/views/widgets/main_button.dart';
 import 'package:flutter_ecommerce/views/widgets/main_dialog.dart';
 import 'package:flutter_ecommerce/views/widgets/social_media_button.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 class AuthPage extends StatefulWidget {
@@ -63,7 +62,7 @@ class _AuthPageState extends State<AuthPage> {
                         model.authFormType == AuthFormType.login
                             ? 'Login'
                             : 'Register',
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headlineMedium,
                       ),
                       const SizedBox(height: 80.0),
                       TextFormField(
@@ -135,7 +134,7 @@ class _AuthPageState extends State<AuthPage> {
                             model.authFormType == AuthFormType.login
                                 ? 'Or Login with'
                                 : 'Or Register with',
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: Theme.of(context).textTheme.titleMedium,
                           )),
                       const SizedBox(height: 16.0),
                       Row(

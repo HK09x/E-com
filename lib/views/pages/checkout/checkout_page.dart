@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/controllers/database_controller.dart';
 import 'package:flutter_ecommerce/models/delivery_method.dart';
 import 'package:flutter_ecommerce/models/shipping_address.dart';
-import 'package:flutter_ecommerce/utilities/assets.dart';
 import 'package:flutter_ecommerce/utilities/routes.dart';
 import 'package:flutter_ecommerce/views/widgets/checkout/checkout_order_details.dart';
 import 'package:flutter_ecommerce/views/widgets/checkout/delivery_method_item.dart';
@@ -23,7 +22,7 @@ class CheckoutPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Checkout',
-          style: Theme.of(context).textTheme.subtitle1,
+          style: Theme.of(context).textTheme.titleMedium,
         ),
         centerTitle: true,
       ),
@@ -35,7 +34,7 @@ class CheckoutPage extends StatelessWidget {
             children: [
               Text(
                 'Shipping address',
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
               const SizedBox(height: 8.0),
               StreamBuilder<List<ShippingAddress>>(
@@ -59,7 +58,7 @@ class CheckoutPage extends StatelessWidget {
                                   'Add new one',
                                   style: Theme.of(context)
                                       .textTheme
-                                      .button!
+                                      .labelLarge!
                                       .copyWith(
                                         color: Colors.redAccent,
                                       ),
@@ -69,7 +68,7 @@ class CheckoutPage extends StatelessWidget {
                           ),
                         );
                       }
-                      // TODO: We need to filter the data to chosse the default one only
+
                       final shippingAddress = shippingAddresses.first;
                       return ShippingAddressComponent(
                           shippingAddress: shippingAddress);
@@ -84,13 +83,13 @@ class CheckoutPage extends StatelessWidget {
                 children: [
                   Text(
                     'Payment',
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
                   InkWell(
                     onTap: () {},
                     child: Text(
                       'Change',
-                      style: Theme.of(context).textTheme.button!.copyWith(
+                      style: Theme.of(context).textTheme.labelLarge!.copyWith(
                             color: Colors.redAccent,
                           ),
                     ),
@@ -98,11 +97,11 @@ class CheckoutPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8.0),
-              PaymentComponent(),
+              const PaymentComponent(),
               const SizedBox(height: 24.0),
               Text(
                 'Delivery method',
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
               const SizedBox(height: 8.0),
               StreamBuilder<List<DeliveryMethod>>(
@@ -133,7 +132,7 @@ class CheckoutPage extends StatelessWidget {
                     );
                   }),
               const SizedBox(height: 32.0),
-              CheckoutOrderDetails(),
+              const CheckoutOrderDetails(),
               const SizedBox(height: 64.0),
               MainButton(
                 text: 'Submit Order',

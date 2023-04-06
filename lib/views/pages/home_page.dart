@@ -41,8 +41,8 @@ class HomePage extends StatelessWidget {
                   vertical: 16.0,
                 ),
                 child: Text(
-                  'Street Clothes',
-                  style: Theme.of(context).textTheme.headline4!.copyWith(
+                  'FurniStore',
+                  style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
                 HeaderOfList(
                   onTap: () {},
                   title: 'Sale',
-                  description: 'Super Summer Sale!!',
+                  description: 'ลดกระหน่ำ ซัมเมอร์ เซลล์!!',
                 ),
                 const SizedBox(height: 8.0),
                 SizedBox(
@@ -95,7 +95,7 @@ class HomePage extends StatelessWidget {
                 HeaderOfList(
                   onTap: () {},
                   title: 'New',
-                  description: 'Super New Products!!',
+                  description: 'สินค้าใหม่สุดๆ!!',
                 ),
                 const SizedBox(height: 8.0),
                 SizedBox(

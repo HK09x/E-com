@@ -39,8 +39,8 @@ class CartListItem extends StatelessWidget {
                   children: [
                     Text(
                       cartItem.title,
-                      style: Theme.of(context).textTheme.headline6!.copyWith(
-                            fontWeight: FontWeight.w600,
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                            fontWeight: FontWeight.w300,
                           ),
                     ),
                     const SizedBox(height: 4.0),
@@ -53,7 +53,7 @@ class CartListItem extends StatelessWidget {
                                   text: 'Color: ',
                                   style: Theme.of(context)
                                       .textTheme
-                                      .caption!
+                                      .bodySmall!
                                       .copyWith(
                                         color: Colors.grey,
                                       )),
@@ -61,7 +61,7 @@ class CartListItem extends StatelessWidget {
                                 text: cartItem.color,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .caption!
+                                    .bodySmall!
                                     .copyWith(
                                       color: Colors.black,
                                     ),
@@ -70,29 +70,7 @@ class CartListItem extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 8.0),
-                        Text.rich(
-                          TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: 'Size: ',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .caption!
-                                      .copyWith(
-                                        color: Colors.grey,
-                                      )),
-                              TextSpan(
-                                text: cartItem.size,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .caption!
-                                    .copyWith(
-                                      color: Colors.black,
-                                    ),
-                              ),
-                            ],
-                          ),
-                        ),
+                       
                       ],
                     ),
                   ],

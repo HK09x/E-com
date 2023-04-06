@@ -31,7 +31,7 @@ class LandingPage extends StatelessWidget {
               child: const BottomNavbar()),
           );
         }
-        // TODO: We will refactor this to make one component for loading
+        
         return const Scaffold(
           body: Center(
             child: CircularProgressIndicator(),

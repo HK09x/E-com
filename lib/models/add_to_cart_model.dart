@@ -7,7 +7,7 @@ class AddToCartModel {
   final String imgUrl;
   final int discountValue;
   final String color;
-  final String size;
+  
 
   AddToCartModel({
     required this.id,
@@ -18,7 +18,7 @@ class AddToCartModel {
     required this.imgUrl,
     this.discountValue = 0,
     this.color = 'Black',
-    required this.size,
+    
   });
 
   Map<String, dynamic> toMap() {
@@ -32,7 +32,7 @@ class AddToCartModel {
     result.addAll({'imgUrl': imgUrl});
     result.addAll({'discountValue': discountValue});
     result.addAll({'color': color});
-    result.addAll({'size': size});
+    
 
     return result;
   }
@@ -47,7 +47,7 @@ class AddToCartModel {
       imgUrl: map['imgUrl'] ?? '',
       discountValue: map['discountValue']?.toInt() ?? 0,
       color: map['color'] ?? '',
-      size: map['size'] ?? '',
+      
     );
   }
 }
